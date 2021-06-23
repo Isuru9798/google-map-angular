@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MouseEvent } from '@agm/core';
-import {} from 'googlemaps';
+// import {} from 'googlemaps';
 import { AgmCoreModule, MapsAPILoader } from "@agm/core";
 
 @Component({
@@ -106,7 +106,7 @@ export class AppComponent {
     this.markerOptions = {
       ...this.markerOptions,
       origin: {
-        draggable: true,
+        draggable: false,
       },
       destination: {
         draggable: true,
